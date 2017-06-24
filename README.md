@@ -29,7 +29,7 @@ Leyati uses [babel](https://babeljs.io/), [babylon](https://github.com/babel/bab
 
 `inspector.options(config)`
 
-The shape of `code` is as follows and can be found in config.js:
+The shape of `config` is as follows and can be found in config.js:
 ```
 {
 	createTestScriptEvenIfAllTestsFail: true,
@@ -91,10 +91,10 @@ inspector.run();
 ```
 
 
-The placeholder format in the templates bundled with Leyati is "%<placeholder name>%", but Leyati accepts any format.
+The placeholder format in the templates bundled with Leyati is "%PLACEHOLDER_NAME%", but Leyati accepts any format.
 
 
-- Remarks
+### Remarks
 
 Leyati/Inspector uses [eshal](https://github.com/jussikan/eshal) to find out the names of exported components in an ES6 file so naming testable components is not necessary on the command line.
 
