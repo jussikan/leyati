@@ -1,0 +1,31 @@
+{
+    "settings": {
+        "import/resolve": {
+            "extensions": [ ".js", ".jsx" ]
+    },
+        "import/parser": "babel-eslint"
+    },
+    "rules": {
+        "no-unused-vars": "error",
+        "linebreak-style": ["error", "unix"],
+        "semi": ["error", "always"],
+        "eol-last": "off",
+    },
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "ecmaFeatures": {
+        "jsx": true,
+        "modules": true,
+        "classes": true,
+        "arrowFunctions": true
+    },
+    "plugins": [
+        "react",
+        "import",
+        "react-intl"
+    ],
+    "parser": "babel-eslint",
+}
