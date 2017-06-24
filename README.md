@@ -15,18 +15,16 @@ Leyati uses [babel](https://babeljs.io/), [babylon](https://github.com/babel/bab
 
 
 
-## Installation
-
-`npm install --save eshal`
-
-
-
 ## API
 
-- bin/leyati.js  <command>  (commands: "init")
-                 <template file name> <test script destination> <source location> [component name]
+`bin/leyati.js  <command>`
+  (commands: "init")
+
+
+`bin/leyati.js  <template file name> <test script destination> <source location> [component name]`
 
 - Inspector
+
 `new Inspector(templateFilename, testsPath, componentName)`
 
 `inspector.options(config)`
@@ -98,7 +96,7 @@ The placeholder format in the templates bundled with Leyati is "%<placeholder na
 
 - Remarks
 
-Leyati/Inspector uses [eshal](https://github.com/eshal) to find out the names of exported components in an ES6 file so naming testable components is not necessary on the command line.
+Leyati/Inspector uses [eshal](https://github.com/jussikan/eshal) to find out the names of exported components in an ES6 file so naming testable components is not necessary on the command line.
 
 
 
