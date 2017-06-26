@@ -2,7 +2,7 @@
   "name": "leyati",
   "description": "React component unit test script generator",
   "author": "Jussi Känsälä <kansalaj@gmail.com>",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "Apache-2.0",
   "main": "lib/index.js",
   "keywords": [
