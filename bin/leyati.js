@@ -4,7 +4,7 @@ const path = require("path");
 
 if (process.argv.length <= 2) {
 	const bin = path.basename(process.argv[1]);
-	console.log("Usage: "+ bin +" <template file name> <test script destination> <source location> <component name>");
+	console.log("Usage: "+ bin +" <template file name> <test script destination> <source location> [component name]");
 	process.exit(1);
 }
 
@@ -150,7 +150,7 @@ files.forEach((filepath, idx) => {
 		const inspector = new Inspector(tplFileName, testDirectory, foundComponentName);
 		inspector.options(config);
 
-		inspector.setConstant("%COMPONENT_NAME%", componentName);
+		inspector.setConstant("%COMPONENT_NAME%", foundComponentName);
 
 		console.log("Setting COMPONENT_PATH as '"+ componentPath +"'");
 		inspector.setConstant("%COMPONENT_PATH%", componentPath);
