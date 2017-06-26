@@ -11,7 +11,7 @@ Leyati uses [babel](https://babeljs.io/), [babylon](https://github.com/babel/bab
 
 ## Installation
 
-`npm install --save eshal`
+`npm install --save leyati`
 
 
 
